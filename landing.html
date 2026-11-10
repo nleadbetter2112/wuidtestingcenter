@@ -1,0 +1,297 @@
+<html>
+<head>
+<title>The Wuid</title>
+<link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<style>
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #5d678a #000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #5d678a;
+}
+
+html {
+  background-image: url('images/5026.png');
+  background-color: #000;
+}
+
+body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff200;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.wrapper-2 {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px auto;
+}
+
+header {
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 5px ridge #342f4c;
+    background-color: #111111;
+    background: url("images/headerbg.png") no-repeat center;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 80%;
+    border: 5px ridge #342f4c;
+    background-color: #111111;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    margin-bottom: 10px;
+    display:inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navbarlinks {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-container {
+    width: 50%;
+    padding: 15px;
+    background-image: url("images/5026.png");
+    background-color: #111111;
+    border: 5px ridge #342f4c;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.left-container {
+    float: left;
+    width: 24%;
+    height: fit-content;
+    padding: 15px;
+    background-image: url("images/5026.png");
+    background-color: #111111;
+    border: 5px ridge #342f4c;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.right-container {
+    float: right;
+    width: 24%;
+    height: fit-content;
+    padding: 15px;
+    position: relative;
+    background-image: url("images/5026.png");
+    background-color: #111111;
+    border: 5px ridge #342f4c;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.innerbox {
+    width: 100%;
+    padding: 15px;
+    border: 5px #6a6a86 dotted;
+    background-color: #272727;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: left;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+footer {
+    width: 70%;
+    border: 5px ridge #342f4c;
+    background: url("images/5022.png");
+    background-size: 100% 100%;
+    background-color: #111111;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box
+}
+
+.insidefooter {
+    width: 90%;
+    background-color: #2c1a51b9;
+    margin: auto;
+    padding: 5px 0px 5px 0px;
+}
+
+#rss {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    background-color: #272727;
+    border: 5px #6a6a86 dotted;
+	box-sizing: border-box;
+}
+
+#rss a {
+	color: #4a526e;
+    text-shadow: #000 2px 1px;
+}
+
+#rss div a {
+    text-shadow: none;
+    filter: drop-shadow(0px 1px #ccccc6) drop-shadow(0 -1px #ccccc6) drop-shadow(-1px 0 #ccccc6) drop-shadow(1px 0 #ccccc6);
+}
+
+#buttons {
+	padding-left: 0;
+}
+
+#buttons li {
+	display: block;
+    position: relative;
+	width: 95%;
+    margin-bottom: 5px;
+	color: #8d9492;
+	background-color: #272727;
+    border: 5px ridge #5a5276;
+    border-radius: 5px;
+}
+
+#buttons li:hover {
+	color: #5d6666;
+}
+
+#buttons li a {
+    width: 100%;
+	height: 100%;
+    text-transform: uppercase;
+	color: inherit;
+    line-height: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+	  color: #CC5500;
+}
+
+h2 {
+    font-style: italic;
+    border-bottom: 3px solid;
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to right, transparent, #4a526e 10%, transparent);
+}
+
+.forum_img {
+    width: 100%;
+    height: 100%;
+}
+
+.inside_img {
+  width: 90%;
+}
+
+.button_imgs:hover {
+	scale: 2;
+	z-index: 3;
+  position: relative;
+}
+
+a {
+  color: #7d7790;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #342f4c;
+}
+
+@media screen and (max-width: 800px) {
+
+.main-container, header, .navbar, footer, .left-container, .right-container, .innerbox, #buttons {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+}
+
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="images/bS47O1793132683.png" class="forum_img" alt="an image of a forum signature banner">
+    </header>
+
+    <div class="wrapper-2">
+        <!--main content-->
+		        <div class="left-container">
+            <h1>Wuid Sightings</h1>
+        <div class="innerbox">
+                <p>The Wuid’s full appearance is uncertain, but it is believed to be able to change appearance to blend into the forest, making it particularly difficult to photograph. Very few have witnessed the Wuid and come back to tell the tale. A contributor who wishes to remain anonymous provided the following photo taken in Little Cottonwood Canyon in September of 1998. </p>
+        		<img src="images/CryptidPhoto-Eyes1-Webbified.jpg" class="inside_img" alt="The WUID">
+				<p>This is her account of the experience:  </p>
+				<p><i>“I was hiking with my girlfriend one evening, we came across these creepy ruins, she said they were from some early development in the canyon around the turn of the century. We had a camera, so we stopped there for a bit, smoked some grass, snapped a few pictures… then we started feeling really weird. Just like, disoriented, paranoid. And not from the pot, this was different. It was like the trees were watching us, I swear to god. Then my tamogotchi started going crazy, playing sounds I’d never heard it play before. It was dark, but I could SWEAR we saw ourselves IN the screen as pixels… I can’t explain it. We ran out of there as fast as we could, I nearly fell in the creek. Didn’t stop running until we reached the car. We both chalked it up to a bad high… until we got the pictures developed. Nobody will believe us, but we both know what we saw.”</i></p>
+		</div>
+		        </div>
+        <div class="main-container">
+            <h1>Wuid History</h1>
+            <div class="innerbox" style="text-align: center; font-size: 1.15em;">
+                <p>Hiding within the idyllic Wasatch–Cache National Forest east of Salt Lake City lurks America’s most elusive and mysterious cryptid… The Wuid. Not much is known about the Wuid (“wid”) itself, but many stories have been whispered throughout the years. </p>
+                <p>The Wuid is an arborescent, humanoid being thought to be responsible for the disappearance of several miners, stonecutters, and hikers between 1853 and 1999 across the Wasatch-Cache National Forest. According to legend, pagans with ancestry from Germany and Scotland disguised themselves as Mormon pioneers to cross the plains, also seeking freedom to practice their “religion”. But more than that, it’s said that they unleashed something ancient in the mountains that still haunts the area. The Mormon pioneers discovered the pagan interlopers after arriving in Salt Lake City in 1847, and ran them out of the settlement into the woods of Emigration Canyon, where the Donner party had passed through just a year prior. Shortly after the pagans were banished to the woods, the disappearances began. </p>
+				<img src="images/the-mormon-pioneers-coming-off-big-mountain-into-mountain-dell-july-1847.jpg" class="inside_img" alt="Pioneers">
+                <p>While the fate of the banished pagans remains a mystery, several artifacts have been discovered, including the following document, discovered by local surveyors in Little Cottonwood Canyon. The photo was taken in 1934, but the document has since been destroyed, likely due to fears of demonic ties. Some of the wording appears to be in High German, while other text has not been identified. The Wuid itself is named after the text that appears in this document (“wuid” being Bavarian for “wild”), as well as our best guess at its appearance(s).</p>
+                <img src="images/PXL_20260930_210752907-Webbified.jpg" class="inside_img" alt="Document">
+            </div>
+        </div>
+
+        <div class="right-container">
+			<h1>Wuid Symbolism</h1>
+            <div class="innerbox">
+				<h2>Wuid Simulacrum</h2>
+				<p>The following symbol has become synonymous with the Wuid, though we strongly recommend against ever replicating the symbol on your own, especially out in the woods, as it is thought to be a summoning totem. If you find one of these totems in the wild, do NOT touch it, stay on the trail, and do not follow it. The Wuid’s intentions are unknown, but it should be considered dangerous. </p>
+                <img src="images/PXL_20261019_001226152-Webbified.jpg" class="inside_img" alt="Effigy">				
+            </div>
+        </div>
+
+        <footer>
+            <div class="insidefooter">
+				<audio controls autoplay muted>
+  				<source src="audio/Graveyard Violet - The VVoods.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+                <p>Credit: CompulsiveComputer.net</p>
+                <p><a href="#top">back to top</a></p>
+            </div>
+        </footer>
+    </div>
+  </div>
+</body>
+</html>
